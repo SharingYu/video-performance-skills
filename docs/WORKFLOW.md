@@ -8,6 +8,8 @@ For original work, establish what the character wants, the habitual way they pur
 
 For reference work, inspect the actual scene or observation record. Find the moment that changes what a viewer understands. Record what was seen and distinguish the directing interpretation. Scenery can change; a prop's function, a line of sight, or an information gap may be essential.
 
+For a local file, the optional [video-observation skill](../skills/video-observation/SKILL.md) covers each shot, revisits uncertain time windows and supplies context-linked crops. Inspect the returned images before writing observation notes. Broad attention, body language, partner response and order are sufficient when that is the user's goal; a facial-measurement system is not required.
+
 ## Make the performance event card
 
 Use the [six-part template](../skills/performance-direction/references/event-card.md). Assign stable IDs only to details that matter: a glance discovering the witness, an interrupted reach, an over-careful cover-up, or a partner's delayed response. A quiet character can be fully active through attention and a precise choice.

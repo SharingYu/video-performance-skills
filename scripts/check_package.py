@@ -103,6 +103,9 @@ def check(root: Path) -> list[str]:
         "README.md", "README.zh-CN.md", "LICENSE", "docs/ATTRIBUTION.md",
         "docs/INSTALL.md", "docs/VALIDATION.md", ".claude-plugin/plugin.json",
         "skills/performance-direction/SKILL.md", "skills/performance-direction/LICENSE",
+        "skills/video-observation/SKILL.md", "skills/video-observation/LICENSE",
+        "skills/video-observation/scripts/video_observe.py",
+        "skills/video-observation/scripts/requirements.txt",
         "evals/cases.json", "evals/oracle.json",
     )
     for relative in required:
@@ -132,44 +135,45 @@ def check(root: Path) -> list[str]:
             for finding in link_errors(path, root, text):
                 errors.append(f"{relative.as_posix()}: {finding}")
 
-    skill_dir = root / "skills/performance-direction"
-    skill = skill_dir / "SKILL.md"
-    if skill.is_file():
+    try:
+        manifest = json.loads((root / ".claude-plugin/plugin.json").read_text(encoding="utf-8"))
+        release_version = manifest.get("version")
+        if manifest.get("name") != "video-performance-skills":
+            errors.append("unexpected plugin name")
+    except (ValueError, OSError) as exc:
+        errors.append(f"cannot read plugin manifest: {exc}")
+        release_version = None
+    for skill in sorted((root / "skills").glob("*/SKILL.md")):
+        skill_dir = skill.parent
         content = skill.read_text(encoding="utf-8")
         match = re.match(r"\A---\r?\n(.*?)\r?\n---(?:\r?\n|$)", content, re.S)
         if not match:
-            errors.append("skill is missing YAML frontmatter")
+            errors.append(f"{skill_dir.name}: missing YAML frontmatter")
         else:
             frontmatter = match.group(1)
-            if not re.search(r"^name: performance-direction\s*$", frontmatter, re.M):
-                errors.append("skill name must match its folder")
+            if not re.search(r"^name: " + re.escape(skill_dir.name) + r"\s*$", frontmatter, re.M):
+                errors.append(f"{skill_dir.name}: skill name must match its folder")
             if not re.search(r"^description: .+", frontmatter, re.M):
                 errors.append("skill description is missing")
             if not re.search(r"^license: MIT\s*$", frontmatter, re.M):
                 errors.append("skill must declare its distributed license")
-            try:
-                manifest = json.loads((root / ".claude-plugin/plugin.json").read_text(encoding="utf-8"))
-                version = re.search(r'^  version: "([^"]+)"\s*$', frontmatter, re.M)
-                if not version or manifest.get("version") != version.group(1):
-                    errors.append("skill and plugin versions differ")
-                if manifest.get("name") != "video-performance-skills":
-                    errors.append("unexpected plugin name")
-            except (ValueError, OSError) as exc:
-                errors.append(f"cannot read plugin manifest: {exc}")
+            version = re.search(r'^  version: "([^"]+)"\s*$', frontmatter, re.M)
+            if not version or release_version != version.group(1):
+                errors.append(f"{skill_dir.name}: skill and plugin versions differ")
         for path in skill_dir.rglob("*.md"):
             for finding in link_errors(path, skill_dir, path.read_text(encoding="utf-8")):
                 errors.append(f"installed skill is not self-contained ({path.name}): {finding}")
+        license_file = skill_dir / "LICENSE"
+        if not license_file.is_file():
+            errors.append(f"{skill_dir.name}: missing standalone license")
+        elif (root / "LICENSE").is_file() and license_file.read_bytes() != (root / "LICENSE").read_bytes():
+            errors.append(f"{skill_dir.name}: standalone license differs from repository license")
     try:
         cases = json.loads((root / "evals/cases.json").read_text(encoding="utf-8"))
         oracle = json.loads((root / "evals/oracle.json").read_text(encoding="utf-8"))
         errors.extend(evaluation_errors(cases, oracle))
     except (ValueError, OSError) as exc:
         errors.append(f"cannot read evaluation files: {exc}")
-    root_license = root / "LICENSE"
-    skill_license = skill_dir / "LICENSE"
-    if root_license.is_file() and skill_license.is_file():
-        if root_license.read_bytes() != skill_license.read_bytes():
-            errors.append("standalone skill license differs from repository license")
     return errors
 
 

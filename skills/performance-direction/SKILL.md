@@ -3,12 +3,14 @@ name: performance-direction
 description: "Preserve the expressive actions, reactions, and timing that make a reference video work; design original visual gags or hooks; and carry those choices into shots, prompts, edits, and review. Use for performance adaptation, lost facial or body detail, weak visual highlights, and performance-focused production review."
 license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Performance Direction
 
 Make performance observable: what attracts a character's attention, how they respond, what changes the audience's understanding, and how the moment lands. Completing the plot action or matching two endpoint images does not establish that the performance survived.
+
+For a local video, use the host's available observation tools before making reference claims. The optional `video-observation` companion helps cover shots and revisit uncertain interactions; it is not required for supplied text or images. Match the user's requested granularity: broad attention, body language and reciprocal action are often enough. Do not turn that request into facial-muscle measurement.
 
 Respond in the user's language. Preserve their scope, characters, style, and decisions. Use the smallest relevant mode:
 

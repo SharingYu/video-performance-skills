@@ -2,9 +2,9 @@
 
 **Keep the look, gesture, and reaction that make a scene work.**
 
-[简体中文](README.zh-CN.md) · [Try an example](examples/README.md) · [Skill](skills/performance-direction/SKILL.md) · [Evaluation cases](evals/README.md)
+[简体中文](README.zh-CN.md) · [Try an example](examples/README.md) · [Video observation](skills/video-observation/SKILL.md) · [Performance direction](skills/performance-direction/SKILL.md)
 
-A focused Agent Skill for AI video creators: analyze the expressive essence of a reference, design original visual highlights, and carry those choices into shots and review. Works with your existing AI assistant; the text examples need no GPU or video service.
+Agent Skills for AI video creators: inspect a local reference with your existing visual assistant, preserve its expressive actions and reactions, design original visual highlights, and carry those choices into shots and review. Text examples need no video service. The optional local observation tools use the CPU and make no model API calls.
 
 ## See the difference
 
@@ -22,21 +22,32 @@ Correct endpoints can still lose the joke. This skill turns the meaningful middl
 With [Node.js 22.20+ and the Skills CLI](https://github.com/vercel-labs/skills), run in your project directory:
 
 ```bash
-npx skills add SharingYu/video-performance-skills --skill performance-direction
+npx skills add SharingYu/video-performance-skills --skill performance-direction video-observation
 ```
 
 Choose your assistant when prompted. Or specify Codex or Claude Code:
 
 ```bash
-npx skills add SharingYu/video-performance-skills --skill performance-direction --agent codex
-npx skills add SharingYu/video-performance-skills --skill performance-direction --agent claude-code
+npx skills add SharingYu/video-performance-skills --skill performance-direction video-observation --agent codex
+npx skills add SharingYu/video-performance-skills --skill performance-direction video-observation --agent claude-code
 ```
 
-This installs a skill, not a new model or video generator. [Manual installation and optional Claude Code plugin](docs/INSTALL.md).
+This installs instructions and the local observation script. To use the script, install its Python dependencies in an isolated environment. No model is installed. [Setup, manual installation and optional Claude Code plugin](docs/INSTALL.md).
 
 ## Use it
 
 Ask your assistant in your preferred language. Attach material it can actually inspect, or provide a concrete observation log.
+
+**Read a local video before recreating it**
+
+```text
+Use video-observation on this local video. Cover each shot, then revisit any
+unclear interaction. Record roughly who looks at whom, body actions, partner
+responses and their order. Actually open the returned images before recording
+an observation. Then use performance-direction for the protected beats.
+```
+
+The observation skill provides a shot overview, denser time windows, context-linked crops and an observer journal. It does not require fine facial coding or pose measurement. [Local video walkthrough](examples/observation/README.md).
 
 **Recreate a reference's performance**
 
@@ -69,18 +80,19 @@ The skill follows your requested scope. An event card does not force every reque
 ## What you get
 
 - **Two creative entry points:** reference essence and original highlights.
+- **Local observation tools:** shot coverage, timestamped image sequences, crops linked to the full view, and observer-attested notes. Exporting frames does not mark them watched.
 - **One six-part event card:** expectation/payoff, visible performance chain, protected details, attention handoff, adjustable conditions, and evidence or creative intent.
 - **A production handoff:** connect protected beats to shot duties, actual candidate intervals, and repair decisions.
 - **Separate review gates:** technical integrity, action, continuity, highlight, and rhythm. Unseen evidence stays pending.
 - **Portable examples and counterexamples:** self-contained text materials, including restrained acting, occlusion, changed scenery, and misleading endpoint evidence.
 
-The package is model-agnostic. It can inform a workflow using H3, another video model, live action, or animation; these backends are **not bundled or controlled by v0.1**. [End-to-end workflow](docs/WORKFLOW.md).
+The package is model-agnostic. It can inform a workflow using H3, another video model, live action, or animation; generation backends are not bundled or controlled. [End-to-end workflow](docs/WORKFLOW.md).
 
 ## What is verified
 
-v0.1 is an instruction package with fictional text examples and a ten-case text evaluation set. Package checks cover portability, links and release hygiene. The evaluation oracle defines intended judgments; it is not a measured video-quality score.
+v0.2 adds a CPU observation CLI to the instruction package. Media tests use temporary synthetic clips to check frame/time correspondence, crops and observation bookkeeping. The fictional text examples and ten-case oracle remain design materials, not a measured video-quality score.
 
-Media understanding depends on the assistant's access and perception capabilities. No arbitrary-URL video reader, rendering server, expression-transfer engine, or posting service is included. We do not claim measured improvements in generated video, exact imitation, audience laughter, or virality. [Validation scope](docs/VALIDATION.md).
+Media understanding still depends on the assistant actually receiving the images and reasoning about them. Static sequences support visible action and order; they do not establish real-time rhythm or audible quality. No arbitrary-URL downloader, video-generation server or posting service is included. We do not claim measured improvements in generated video, exact imitation, audience laughter, or virality. [Validation scope](docs/VALIDATION.md).
 
 ## Contribute
 

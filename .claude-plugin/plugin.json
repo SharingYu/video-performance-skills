@@ -1,7 +1,7 @@
 {
   "name": "video-performance-skills",
-  "version": "0.1.0",
-  "description": "Direct reference performances and original visual highlights with observable beats, attention handoffs, and evidence-aware review.",
+  "version": "0.2.0",
+  "description": "Inspect local videos with CPU observation tools, then direct performances and original highlights with traceable beats and evidence-aware review.",
   "author": { "name": "SharingYu", "url": "https://github.com/SharingYu" },
   "homepage": "https://github.com/SharingYu/video-performance-skills",
   "repository": "https://github.com/SharingYu/video-performance-skills",

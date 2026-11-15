@@ -16,9 +16,11 @@ Priorities are guided by reproducible creator problems. The sequence below is di
 - Additional genres and acting styles: restrained drama, stylized animation, product storytelling and human ensembles.
 - Better creator onboarding based on actual installation and task feedback.
 
-## Then — small executable adapters
+## v0.2 — local observation tools
 
-Candidate operations include media probing, timestamp-preserving frame extraction, contact sheets, event-to-source references and candidate interval comparison. Each needs a deterministic interface, documented limits and a local test before being exposed to an agent.
+CPU media inspection, per-shot overview, timestamp-preserving windows, context-linked crops and observer-attested notes are now provided by `video-observation`. It uses the host's existing image perception and makes no model API calls. Broad body language and interactions are the default target.
+
+Candidate interval comparison and task submission remain future adapters. Each needs a deterministic interface, documented limits and a local test before being exposed to an agent.
 
 Use existing production backends where practical. A ComfyUI/H3 adapter could submit and recover authorized tasks with receipts; the skill itself should stay backend independent. Do not duplicate an entire workbench to add an event card.
 
