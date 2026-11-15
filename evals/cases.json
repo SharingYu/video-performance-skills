@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "material_type": "original_synthetic_text",
+  "scope": "New fictional written fixtures for checking performance reasoning and evidence boundaries. No case represents a real video, observed audience reaction, or model-quality benchmark.",
+  "cases": [
+    {
+      "id": "PD-01",
+      "mode": "reference",
+      "synthetic_text": true,
+      "request": "Review a restaging that may change the setting and decoration while retaining the comic performance. Do not require an exact background match or every incidental blink.",
+      "evidence": [
+        "This is an original fictional text fixture, not an observation of real footage. Pip and Rowan are stop-motion puppet colleagues giving a presentation.",
+        "Pip begins a grand gesture toward a distant wall chart with an extended telescoping pointer. A long replacement pointer is already visible on the side desk.",
+        "The telescoping pointer collapses during the flourish. Pip looks down at it, checks Rowan's face, and converts the unfinished flourish into conspicuously careful close-range pointing.",
+        "Rowan watches Pip without a broad facial reaction and offers the long pointer. Pip's receiving hand pauses, then takes it and continues with a smaller gesture. One blink is recorded but is not essential to the requested effect."
+      ],
+      "candidate": "Move the action from a classroom to a harbour navigation hut and replace the wall chart with a tide chart. Keep the chart far enough away that the collapsed pointer matters. Preserve the flourish, collapse, look down, check toward Rowan, improvised close-range pointing, quiet offer, and Pip's interrupted receiving gesture. Keep both faces and the two pointers readable. Omit the incidental blink."
+    },
+    {
+      "id": "PD-02",
+      "mode": "reference",
+      "synthetic_text": true,
+      "request": "Check whether this candidate preserves a reference whose important turn is a presenter noticing a tool failure and trying to conceal the disruption.",
+      "evidence": [
+        "This is an original fictional text fixture. The source performance has Pip's pointer collapse during a confident flourish, followed by a look down, a check toward Rowan, and a change of gesture.",
+        "Rowan's quiet offer of a replacement and Pip's brief interrupted acceptance complete the exchange.",
+        "The candidate's written inspection explicitly reports that Pip continues staring at the chart with an unchanged gesture through the collapse. There is no look down, check toward Rowan, or change of tactic. The replacement exchange is mechanically completed without a receiving pause."
+      ],
+      "candidate": "Approve the sequence because presenting, tool collapse, replacement, and continued presenting all occur, and the opening and closing poses match the reference."
+    },
+    {
+      "id": "PD-03",
+      "mode": "reference",
+      "synthetic_text": true,
+      "request": "Review whether the essential performance is legible in this proposed framing. Distinguish an action's possible existence from its delivery to a viewer.",
+      "evidence": [
+        "This is an original fictional text fixture. Its required effect depends on Pip checking Rowan before trying to make a collapsed pointer look intentional.",
+        "The proposed wide view includes an elaborate whole room. The written frame inspection says the eye directions cannot be distinguished at the intended display size.",
+        "A tall display stand hides the pointer and Pip's hands during the collapse and improvised gesture. Rowan's replacement eventually enters the clear part of the frame.",
+        "No actual image or video file is supplied; these are the fixture's stated inspection findings."
+      ],
+      "candidate": "Keep the wide composition and approve the performance because the generation prompt explicitly requests a glance, a pause, and a recovery."
+    },
+    {
+      "id": "PD-04",
+      "mode": "reference",
+      "synthetic_text": true,
+      "request": "Review this edit decision without imposing a fixed shot length. Keep a written editing judgement separate from a real-time rhythm judgement.",
+      "evidence": [
+        "This is an original fictional text fixture. The selected material retains the confident flourish, pointer collapse, noticing and checking, improvised gesture, quiet replacement offer, and interrupted acceptance.",
+        "It also retains the first smaller gesture after Pip accepts the replacement, so the effect of the exchange remains visible.",
+        "Only a later extension of the same settled pose is omitted. That extension has no newly recorded attention target, action, information, or response.",
+        "There is no real duration, frame range, audio track, or playback record. No freeze, repeated frames, or speed change is proposed."
+      ],
+      "candidate": "End after the changed gesture has been read, then remove the repetitive extension. Leave the exact cut and the naturalness of the remaining pause for review of the actual footage."
+    },
+    {
+      "id": "PD-05",
+      "mode": "reference",
+      "synthetic_text": true,
+      "request": "Review whether a shorter edit protects the setup, recognition and response that make this exchange meaningful.",
+      "evidence": [
+        "This is an original fictional text fixture. The source first establishes an oversized confident flourish, then the collapse, Pip's recognition and glance toward Rowan, the changed gesture, and the quiet offer and interrupted acceptance.",
+        "The proposed edit starts with the pointer already short. It then jumps directly to Pip holding the replacement and pointing normally.",
+        "The flourish, collapse, recognition, look toward Rowan, improvised gesture, offer, and receiving pause are all omitted from the selected material."
+      ],
+      "candidate": "Approve the brisker cut because a short pointer and a usable replacement still appear, so the object-state checklist is complete."
+    },
+    {
+      "id": "PD-06",
+      "mode": "reference",
+      "synthetic_text": true,
+      "request": "Assess this restrained response without requiring extra facial movement. Review the given local exchange rather than an unprovided whole film.",
+      "evidence": [
+        "This is an original fictional text fixture. The preceding shot clearly establishes Pip trying to continue with a collapsed pointer and checking Rowan.",
+        "In the response shot, Rowan's visible gaze remains directed at Pip. The face is almost still, with no broad smile or prescribed blink.",
+        "As Pip's improvised gesture stops at the edge of the frame, Rowan offers the already-established replacement pointer. The next shot retains Pip's brief receiving pause and smaller continued gesture.",
+        "The supplied written record keeps pointer identity, ownership, contact and direction consistent across these local boundaries. Actual speed and sound are not supplied."
+      ],
+      "candidate": "Keep the restrained face and precise offer. Judge the response through its attention target, timing relative to Pip, and consequence, rather than adding random blinks or a large grin."
+    },
+    {
+      "id": "PD-07",
+      "mode": "reference",
+      "synthetic_text": true,
+      "request": "Assess a claimed deadpan response against the specific exchange it is meant to carry. Do not reject stillness merely because it is stillness.",
+      "evidence": [
+        "This is an original fictional text fixture. The required exchange includes Rowan attending to Pip's disrupted presentation, offering the established replacement, and Pip responding to that offer.",
+        "The candidate's complete written record instead keeps Rowan facing the camera in one unchanged pose. The frame contains neither pointer, and no visible response is connected to Pip's preceding action.",
+        "The following shot already has Pip presenting normally with a replacement. Neither the offer nor Pip's reaction is shown anywhere in the candidate record."
+      ],
+      "candidate": "Call the unchanged shot deadpan comedy and mark the exchange complete without locating another shot that carries the offer or response."
+    },
+    {
+      "id": "PD-08",
+      "mode": "reference",
+      "synthetic_text": true,
+      "request": "Determine what can be concluded about the essential middle performance from this handoff. Do not invent events or missing-event findings.",
+      "evidence": [
+        "This is an original fictional text fixture. The handoff supplies only two descriptions: an opening pose with Pip holding an extended pointer and a closing pose with Pip holding a replacement.",
+        "No intermediate frames, motion record, selected interval, or observation of noticing, checking, concealment, offering or accepting is supplied.",
+        "There is no evidence that those middle actions happened, and no evidence that they did not happen."
+      ],
+      "candidate": "The endpoints match the intended start and finish. Is there enough evidence to approve preservation of the performance between them?"
+    },
+    {
+      "id": "PD-09",
+      "mode": "original",
+      "synthetic_text": true,
+      "request": "Review a new visual-comedy idea for two adult bicycle-shop colleagues. One wants to prove efficient expertise; the other is experienced and considerate. The scene should be understandable without explanatory captions.",
+      "evidence": [
+        "This is an original fictional text fixture, not an existing film or a generated output.",
+        "The brief establishes an ordinary workshop and a small repair goal. It establishes no magical rules or surreal object transformation.",
+        "The proposed action has neither colleague choose a distinctive repair strategy, make a consequential mistake, or respond differently to the problem."
+      ],
+      "candidate": "Both colleagues reach for an ordinary wrench. Without a prior cue or any action causing it, the wrench turns into an accordion, the bicycle repairs itself, and both characters make the same surprised face. A caption announces that this is professional efficiency. Treat the unexpected transformation as an already-earned comic payoff."
+    },
+    {
+      "id": "PD-10",
+      "mode": "reference",
+      "synthetic_text": true,
+      "request": "Audit the precision of a performance observation. Keep head orientation, visible eye direction, manipulation target and inferred intent distinct.",
+      "evidence": [
+        "This is an original fictional text fixture about an adult ceramicist, not a real person or recording.",
+        "The supplied record says the ceramicist's head is angled toward a kiln and both hands are centring a bowl on a work surface.",
+        "The record does not specify the eyes' direction. There is no eye close-up, gaze measurement, or later action that establishes what the person was looking at during that interval.",
+        "The person could have different eye and head directions; the fixture does not resolve that question."
+      ],
+      "candidate": "Write the eye target as the bowl because the hands are working on it, or as the kiln because the head is angled that way. Use either inference as a verified observation of the person's gaze."
+    }
+  ]
+}

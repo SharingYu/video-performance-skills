@@ -1,0 +1,7 @@
+interface:
+  display_name: "Performance Direction"
+  short_description: "Preserve acting beats and design visual story highlights"
+  default_prompt: "Use $performance-direction to preserve reference performance, design an original visual highlight, or review its production handoff."
+
+policy:
+  allow_implicit_invocation: true

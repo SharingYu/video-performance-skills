@@ -1,0 +1,24 @@
+name: Behavior or missing performance detail
+description: Report a reproducible creative or evidence-handling failure
+body:
+  - type: textarea
+    id: request
+    attributes:
+      label: Request and accessible input
+      description: Include a small shareable example. Label synthetic text or actual media.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual output and host
+      description: Include the assistant/model/version if known; remove private information.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should change, and why?
+      description: Point to a visible detail, causal gap, or uncertainty. Separate observation from interpretation.
+    validations:
+      required: true

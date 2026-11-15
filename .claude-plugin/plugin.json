@@ -1,0 +1,10 @@
+{
+  "name": "video-performance-skills",
+  "version": "0.1.0",
+  "description": "Direct reference performances and original visual highlights with observable beats, attention handoffs, and evidence-aware review.",
+  "author": { "name": "SharingYu", "url": "https://github.com/SharingYu" },
+  "homepage": "https://github.com/SharingYu/video-performance-skills",
+  "repository": "https://github.com/SharingYu/video-performance-skills",
+  "license": "MIT",
+  "keywords": ["video", "performance", "directing", "visual-comedy", "agent-skills"]
+}

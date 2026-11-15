@@ -1,0 +1,11 @@
+# Sources and Adaptation Limits
+
+This skill is original instructional writing informed by the following public methods. It does not bundle their skill text, articles, training media, models, or software. These links are background, not execution dependencies.
+
+- [Facial Expression Prompting](https://github.com/zhouwei713/facial-expression-prompting/tree/a3236cc9b8972ce3dab998c438bfbb51542a411b), zhouwei713, MIT: motivation, recognition, concealment, expression leakage, and aftermath. Its duration examples and human facial units are not universal rules here.
+- [Higgsfield Acting](https://github.com/OSideMedia/higgsfield-ai-prompt-skill/blob/6a6a5dd105d285782dd6992692be4d8b3825ca13/skills/higgsfield-acting/SKILL.md), O-Side Media, MIT: purposeful attention, triggered habits, and continuity of behavior. Platform-specific fields, numerical prescriptions, and performance claims are not adopted.
+- [Joke Engineering](https://github.com/jwynia/agent-skills/blob/e02ec7e226a6e4f8419fd3b88a1d8e472d421b32/skills/creative/humor/joke-engineering/SKILL.md), jwynia; this file declares MIT: diagnostics for predictability, obscurity, explanation, character fit, and setup bloat. No claim is made about the license of that entire repository or the ability to predict laughter.
+- Animation Mentor, Nathaniel Seymour: [staging attention between two characters](https://www.animationmentor.com/blog/tutorial-use-character-staging-to-guide-viewer-focus/) and [animating caution](https://www.animationmentor.com/blog/tutorial-animating-caution-in-character-acting/). General lessons concern attention transfer and observable acting phases; particular poses and frame counts are not templates. No article or teaching media is reproduced.
+- [CatFACS](https://github.com/AnimalFACS/CatFACS): a reminder to describe species-appropriate observable movement separately from inferred emotion. This skill is not a FACS coding system or animal emotion detector and includes no CatFACS materials.
+
+The release's optional [repository attribution record](https://github.com/SharingYu/video-performance-skills/blob/v0.1.0/docs/ATTRIBUTION.md) provides additional provenance. No network access is needed to apply this skill.

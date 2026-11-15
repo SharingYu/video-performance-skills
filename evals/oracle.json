@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "scope": "Reviewer-only expectations for original fictional text fixtures. Do not provide this file to the agent during a blind run. Decisions concern written duties and evidence, not actual video quality or audience response.",
+  "decision_meanings": {
+    "supported": "The stated plan or written observation supports the requested duty within its limited scope; real media remains untested.",
+    "revise": "The written proposal explicitly removes, contradicts or fails to deliver a protected relationship or condition.",
+    "pending": "The supplied evidence cannot establish the performance fact in question. Do not promote uncertainty to success or a proven missing-action failure."
+  },
+  "expected": [
+    {
+      "id": "PD-01",
+      "decision": "supported",
+      "required_reasoning": [
+        "The new setting preserves the collapse, recognition, concealment, quiet offer and receiving response, including the distance that makes the short pointer matter.",
+        "The incidental blink and exact decoration are not the protected mechanism."
+      ],
+      "unverified": ["Actual character identity, physical execution, legibility, normal-speed rhythm, audio and audience response."]
+    },
+    {
+      "id": "PD-02",
+      "decision": "revise",
+      "required_reasoning": [
+        "The evidence explicitly removes the noticing, attention check, tactic change and interrupted reception; it is not merely missing documentation.",
+        "A complete event checklist and matching endpoints do not preserve the performance. Restore the relevant middle behaviour rather than relabelling the duty or explaining it with a caption."
+      ],
+      "unverified": ["No real media exists, so the judgement must remain a written-contract finding."]
+    },
+    {
+      "id": "PD-03",
+      "decision": "revise",
+      "required_reasoning": [
+        "The stated framing and occlusion prevent the viewer from reading the protected eye and hand relationships.",
+        "Prompt inclusion is not delivery. Change framing, scale, occlusion or attention management before claiming fidelity; do not infer that every hidden action physically failed to occur."
+      ],
+      "unverified": ["Actual pixels, playback and technical media quality have not been inspected."]
+    },
+    {
+      "id": "PD-04",
+      "decision": "supported",
+      "required_reasoning": [
+        "The proposed omission begins after the protected exchange and its changed continuation have been retained.",
+        "Removing a recorded repetition can be justified without imposing a fixed duration. The exact cut and remaining pause still need actual playback."
+      ],
+      "unverified": ["Real cut points, normal-speed rhythm and audio."]
+    },
+    {
+      "id": "PD-05",
+      "decision": "revise",
+      "required_reasoning": [
+        "The edit removes the expectation-building gesture, disruption, recognition and reciprocal response, leaving only object states.",
+        "Restore already-available protected action and response before trimming repetitions. If the underlying material is absent, return upstream; captions or speed changes cannot supply it."
+      ],
+      "unverified": ["Whether any real underlying footage exists or can be recovered."]
+    },
+    {
+      "id": "PD-06",
+      "decision": "supported",
+      "required_reasoning": [
+        "The still face has a visible attention target, a response tied to a partner's action, and a consequence in the next shot.",
+        "Do not require extra facial movement, random eye motion or a grin. Support only the described local exchange, not a whole film."
+      ],
+      "unverified": ["Actual timing, identity stability, movement quality and sound."]
+    },
+    {
+      "id": "PD-07",
+      "decision": "revise",
+      "required_reasoning": [
+        "The supplied complete record lacks the required attention, offer and receiving response; the next state alone does not replace that exchange.",
+        "The failure is task-specific missing behaviour, not a universal rule that motionless faces are bad. Restore a readable relationship or assign the missing duty to an appropriate shot."
+      ],
+      "unverified": ["No actual playback or technical verification is available."]
+    },
+    {
+      "id": "PD-08",
+      "decision": "pending",
+      "required_reasoning": [
+        "The same endpoints permit different middle performances. They establish neither successful preservation nor proven absence of the required action.",
+        "Request or locate evidence of the current middle sequence and its selected interval; do not fabricate timecodes, media identifiers, hashes or a passed review."
+      ],
+      "unverified": ["Every essential middle performance fact and the actual media quality."]
+    },
+    {
+      "id": "PD-09",
+      "decision": "revise",
+      "required_reasoning": [
+        "The unprepared transformation is surprising but not caused by the characters' choices or an established world condition. Both characters receive the same generic reaction.",
+        "Return to the goal, contrasting strategies, comprehensible consequence and response. An explanatory caption, larger expression or further random twist does not by itself earn the payoff."
+      ],
+      "unverified": ["Actual funniness, rendered feasibility and audience appeal."]
+    },
+    {
+      "id": "PD-10",
+      "decision": "pending",
+      "required_reasoning": [
+        "The head angle and manipulation target are given; the eye target is not. Neither observation proves where the eyes were directed.",
+        "Remove the verified-gaze assertion, record the eye direction as unknown, and keep a proposed interpretation separate from observation. Do not assert that the person actually looked elsewhere."
+      ],
+      "acceptable_variation": "A reviewer may label the observation record 'revise' when this specifically means correcting the unsupported assertion; the actual eye direction must still remain unverified.",
+      "unverified": ["The eye target and any emotional state inferred from it."]
+    }
+  ],
+  "global_limits": [
+    "No case provides real frames, timecodes, hashes, audio or video.",
+    "A supported written proposal must not become an actual-media pass.",
+    "Different wording or shot solutions may be valid when they preserve the stated function.",
+    "This is not a controlled comparison of skills, a model success-rate study, a creativity score or a prediction of laughter."
+  ]
+}
