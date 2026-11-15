@@ -1,0 +1,7 @@
+interface:
+  display_name: "Video Creation"
+  short_description: "Route references, novels and original stories into video"
+  default_prompt: "Use $video-creation to choose the right workflow for my source and develop it through the requested creative or production stage."
+
+policy:
+  allow_implicit_invocation: true

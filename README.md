@@ -1,10 +1,20 @@
 # Video Performance Skills
 
-**Keep the look, gesture, and reaction that make a scene work.**
+**Create from a video reference, a novel, or an original idea. Keep the performance that makes it work.**
 
-[简体中文](README.zh-CN.md) · [Try an example](examples/README.md) · [Video observation](skills/video-observation/SKILL.md) · [Performance direction](skills/performance-direction/SKILL.md)
+[简体中文](README.zh-CN.md) · [Three routes](docs/THREE-ROUTES.md) · [Creation hub](skills/video-creation/SKILL.md) · [Examples](examples/three-routes/README.md)
 
-Agent Skills for AI video creators: inspect a local reference with your existing visual assistant, preserve its expressive actions and reactions, design original visual highlights, and carry those choices into shots and review. Text examples need no video service. The optional local observation tools use the CPU and make no model API calls.
+One creation hub, two focused companion skills, and small local tools for AI video creators. Use your existing assistant to develop the story, inspect accessible material, preserve expressive actions and reactions, and carry source-aware decisions into scripts, shots and review. Local tools make no model API calls.
+
+## Choose your route
+
+| You bring | The hub helps you do |
+| --- | --- |
+| A video link or file | Obtain real media through available host tools, observe the event, protect its highlights and rebuild the requested story |
+| A novel | Read traceable chunks, develop characters and dramatic units, design episodes, then write scripts and production handoffs |
+| An idea or an inspiring video | Compare story mechanisms and develop an original or meaningfully adapted story |
+
+The same brief, source records, series memory and review methods connect all three. A selected script can enter directly at shot design; there is no mandatory full-pipeline ritual. [Route details](docs/THREE-ROUTES.md) · [What is actually provided](docs/CAPABILITIES.md).
 
 ## See the difference
 
@@ -22,14 +32,14 @@ Correct endpoints can still lose the joke. This skill turns the meaningful middl
 With [Node.js 22.20+ and the Skills CLI](https://github.com/vercel-labs/skills), run in your project directory:
 
 ```bash
-npx skills add SharingYu/video-performance-skills --skill performance-direction video-observation
+npx skills add SharingYu/video-performance-skills --skill video-creation performance-direction video-observation
 ```
 
 Choose your assistant when prompted. Or specify Codex or Claude Code:
 
 ```bash
-npx skills add SharingYu/video-performance-skills --skill performance-direction video-observation --agent codex
-npx skills add SharingYu/video-performance-skills --skill performance-direction video-observation --agent claude-code
+npx skills add SharingYu/video-performance-skills --skill video-creation performance-direction video-observation --agent codex
+npx skills add SharingYu/video-performance-skills --skill video-creation performance-direction video-observation --agent claude-code
 ```
 
 This installs instructions and the local observation script. To use the script, install its Python dependencies in an isolated environment. No model is installed. [Setup, manual installation and optional Claude Code plugin](docs/INSTALL.md).
@@ -37,6 +47,8 @@ This installs instructions and the local observation script. To use the script, 
 ## Use it
 
 Ask your assistant in your preferred language. Attach material it can actually inspect, or provide a concrete observation log.
+
+Start with **video-creation**: “recreate this video's story with my characters,” “adapt this novel into an episodic comic drama,” or “develop an original story from this idea.” It routes the task and uses specialist skills when present. [Three-route text walkthroughs](examples/three-routes/README.md).
 
 **Read a local video before recreating it**
 
@@ -80,6 +92,8 @@ The skill follows your requested scope. An event card does not force every reque
 ## What you get
 
 - **Two creative entry points:** reference essence and original highlights.
+- **One integrated hub:** reference reconstruction, novel adaptation and original/reference-derived story development.
+- **Recoverable source work:** frozen inputs, hashes, UTF-8 chunks, delivered-read records and versioned artifacts. File integrity is distinct from understanding and creative approval.
 - **Local observation tools:** shot coverage, timestamped image sequences, crops linked to the full view, and observer-attested notes. Exporting frames does not mark them watched.
 - **One six-part event card:** expectation/payoff, visible performance chain, protected details, attention handoff, adjustable conditions, and evidence or creative intent.
 - **A production handoff:** connect protected beats to shot duties, actual candidate intervals, and repair decisions.
@@ -90,9 +104,11 @@ The package is model-agnostic. It can inform a workflow using H3, another video 
 
 ## What is verified
 
-v0.2 adds a CPU observation CLI to the instruction package. Media tests use temporary synthetic clips to check frame/time correspondence, crops and observation bookkeeping. The fictional text examples and ten-case oracle remain design materials, not a measured video-quality score.
+v0.3 adds the three-route hub and a standard-library source/project tool. Text-intake tests check byte preservation, Unicode chunks, source changes, continuation and artifact history. Media tests use temporary synthetic clips to check frame/time correspondence, crops and observation bookkeeping. Text examples and the ten-case oracle remain design materials, not a measured video-quality score.
 
 Media understanding still depends on the assistant actually receiving the images and reasoning about them. Static sequences support visible action and order; they do not establish real-time rhythm or audible quality. No arbitrary-URL downloader, video-generation server or posting service is included. We do not claim measured improvements in generated video, exact imitation, audience laughter, or virality. [Validation scope](docs/VALIDATION.md).
+
+Novel analysis and script development are usable workflows; a complete spoken series still needs real image/video, voice, timing, editing and publishing tools. Local H3 experience is not evidence of a verified novel-to-platform automation pipeline. [Readiness boundaries](docs/CAPABILITIES.md).
 
 ## Contribute
 

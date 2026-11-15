@@ -3,7 +3,7 @@ name: performance-direction
 description: "Preserve the expressive actions, reactions, and timing that make a reference video work; design original visual gags or hooks; and carry those choices into shots, prompts, edits, and review. Use for performance adaptation, lost facial or body detail, weak visual highlights, and performance-focused production review."
 license: MIT
 metadata:
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Performance Direction

@@ -7,14 +7,14 @@ The skills need an AI assistant that supports Agent Skills or can read the instr
 The upstream [Skills CLI](https://github.com/vercel-labs/skills) currently requires Node.js 22.20+. Run inside the project where you want the skill:
 
 ```bash
-npx skills add SharingYu/video-performance-skills --skill performance-direction video-observation
+npx skills add SharingYu/video-performance-skills --skill video-creation performance-direction video-observation
 ```
 
 Select an assistant when prompted. Explicit project installs:
 
 ```bash
-npx skills add SharingYu/video-performance-skills --skill performance-direction video-observation --agent codex
-npx skills add SharingYu/video-performance-skills --skill performance-direction video-observation --agent claude-code
+npx skills add SharingYu/video-performance-skills --skill video-creation performance-direction video-observation --agent codex
+npx skills add SharingYu/video-performance-skills --skill video-creation performance-direction video-observation --agent claude-code
 ```
 
 On Windows, use `npx.cmd` if your shell blocks the PowerShell shim. Add `--copy` when symlinks are unsuitable. For a global installation, the upstream CLI offers `--global`; project scope is enough for the examples.
@@ -23,12 +23,14 @@ Open a new assistant session if the host requires it. Ask it to use `performance
 
 ## Manual installation
 
-1. Download the [versioned release](https://github.com/SharingYu/video-performance-skills/releases/tag/v0.2.0) ZIP, or clone the repository.
-2. Copy either or both complete skill folders from `skills/`, including their references, scripts and licenses, to your host's project skill directory.
+1. Download the [versioned release](https://github.com/SharingYu/video-performance-skills/releases/tag/v0.3.0) ZIP, or clone the repository.
+2. Copy one or more complete skill folders from `skills/`, including their references, scripts and licenses, to your host's project skill directory.
 3. For Codex, the project location is `.agents/skills/<skill-name>/`. For Claude Code, it is `.claude/skills/<skill-name>/`.
-4. Start a session in that project and ask it to use the skill. In Codex, explicit invocation is `$video-observation` or `$performance-direction`; Claude Code standalone mode uses `/video-observation` or `/performance-direction`.
+4. Start a session in that project and ask it to use the skill. Begin with `$video-creation` in Codex or `/video-creation` in Claude Code standalone mode. Both specialized companions can still be used directly.
 
 Do not copy just `SKILL.md`; it routes to bundled references. No sibling skill or research directory is needed.
+
+The hub's `scripts/project_tool.py` uses only the Python 3.10+ standard library. It records source and artifact state; it does not download links, convert documents, write stories or render films. See [the three-route walkthrough](../examples/three-routes/README.md).
 
 ## Python setup for local video observation
 
@@ -70,6 +72,7 @@ In that session:
 ```text
 /video-performance-skills:performance-direction
 /video-performance-skills:video-observation
+/video-performance-skills:video-creation
 ```
 
 Use either the standalone install or plugin mode for a given session to avoid duplicate discovery. No marketplace acceptance or public directory listing is implied.

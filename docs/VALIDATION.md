@@ -2,7 +2,7 @@
 
 ## Available evidence
 
-v0.2 includes two self-contained skills, a CPU video-observation CLI, fictional text demonstrations, and ten text cases with a separate expected-judgment oracle. The text cases exercise changed scenery, absent reactions, deadpan acting, visibility, redundant holds and incomplete evidence.
+v0.3 includes a three-route creation hub, two focused companion skills, local project/text and video-observation tools, fictional demonstrations, and ten text cases with a separate expected-judgment oracle. The text cases exercise changed scenery, absent reactions, deadpan acting, visibility, redundant holds and incomplete evidence.
 
 The examples are authored illustrations. The oracle is an evaluation design, not an automatic score or a published model run. No generated video is distributed as a measured result in this release.
 
@@ -19,7 +19,9 @@ These check required files, local-link portability, release version agreement, t
 
 Install `skills/video-observation/scripts/requirements.txt` to run the media integration tests. Without media dependencies, the media suite explicitly skips; the release CI installs them and sets `VIDEO_OBSERVE_REQUIRE_MEDIA=1` so missing dependencies or required fixture encoders fail instead of silently reducing coverage. Temporary media covers source-frame correspondence, variable timing, nonzero starts, crop provenance, output collisions and observation bookkeeping. No fixture media is committed.
 
-The maintainer also checks installation into clean project folders with the Skills CLI and validates the optional Claude plugin manifest. An installer success proves file discovery and copying, not the reasoning quality of every supported host or model. See the [release notes](https://github.com/SharingYu/video-performance-skills/releases/tag/v0.2.0) for the actual commands and versions used.
+The project-tool tests use temporary original text inputs and real CLI processes. They cover UTF-8/BOM/CRLF preservation, long lines, source/index changes, link-only state, URL-token removal, cross-process continuation, artifact version history and path boundaries. URL-only analysis/development records retain metadata provenance without becoming media evidence; later source-dependent stages require real files. A read receipt means only that the tool returned a chunk. A recorded file and its matching hash do not establish a correct adaptation, a complete book analysis or accepted media.
+
+The maintainer also checks installation into clean project folders with the Skills CLI and validates the optional Claude plugin manifest. An installer success proves file discovery and copying, not the reasoning quality of every supported host or model. See the [release notes](https://github.com/SharingYu/video-performance-skills/releases/tag/v0.3.0) for the actual commands and versions used.
 
 Observation journals record what an observer says they opened, with source and view references. The CLI cannot verify the observer's perception. A successful export, note or agreement between assistants is not automatic approval of the video.
 
@@ -34,6 +36,8 @@ For a future media study, use original or shareable material, retain candidate i
 - A causal improvement in generated-video quality.
 - Accurate perception of every expression, glance or fine paw action.
 - Equivalence across video generators or assistant models.
+- Full-book semantic consistency or an end-to-end generated, spoken novel series.
+- Current publishing eligibility or technical acceptance for Hongguo or another platform.
 - A guaranteed comic response, retention uplift, or viral hit rate.
 
 The useful claim is narrower: a portable way to specify and review what a performance must visibly achieve, with explicit counterexamples and uncertainty.

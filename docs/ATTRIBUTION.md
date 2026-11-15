@@ -25,12 +25,20 @@ The local observation script is original implementation. The following projects 
 
 Runtime dependencies are installed separately: [PyAV](https://github.com/PyAV-Org/PyAV) (BSD-3-Clause; links FFmpeg libraries), [Pillow](https://github.com/python-pillow/Pillow) (the tested 13.0.0 distribution declares MIT-CMU), and [PySceneDetect](https://github.com/Breakthrough/PySceneDetect) (BSD-3-Clause; includes its own dependency tree). FFmpeg's build-dependent LGPL/GPL terms remain applicable to FFmpeg libraries; this repository does not redistribute its binaries. Refer to the installed distributions for their complete notices. [PyAV timestamps](https://pyav.org/docs/stable/api/frame.html) and [FFmpeg showinfo](https://ffmpeg.org/ffmpeg-filters.html#showinfo) inform source-time bookkeeping.
 
-## Packaging references
+## Three-route integration — v0.3
+
+The `video-creation` entry and standard-library project tool are original contributions. Method selection draws on [ZenStory Drama Skills at 3d813c30871b4db5f2387d83bdc3a49db8ce7b2b](https://github.com/zenstory-ai/drama-skills/tree/3d813c30871b4db5f2387d83bdc3a49db8ce7b2b) and [8cf7404981b7095b498e061832bb3c9ffd6a42be](https://github.com/zenstory-ai/drama-skills/tree/8cf7404981b7095b498e061832bb3c9ffd6a42be), including the dedicated novel-analysis method. Selected opening, payoff and continuity questions also draw on [Short-Drama Factory at 33d9988f5b9d83963cf1010b49f321fc09ea5a22](https://github.com/lixiaoxiao9888-create/short-drama-factory/tree/33d9988f5b9d83963cf1010b49f321fc09ea5a22) and [short-drama at 8979a428c31a865421d661bdb606e24314b683a0](https://github.com/0xsline/short-drama/tree/8979a428c31a865421d661bdb606e24314b683a0). These selected sources declare MIT; their complete skill collections and scripts are not redistributed here.
+
+Premise, character strategy and scene questions also reference [screenwriting-skills at 51115f18d160aa8b2ac5813e4432b6f0b425358f](https://github.com/jtydhr88/screenwriting-skills/tree/51115f18d160aa8b2ac5813e4432b6f0b425358f). Its MIT scope covers original organization and analysis; third-party books, scripts and translations are excluded by its NOTICE and are not included here. More detail is bundled with [the hub's sources](../skills/video-creation/references/sources.md).
+
+The three-chapter prose exercise is newly authored fictional teaching text. It is not a published novel, an actual production case or a licensed third-party IP. No platform rule or commercial-success claim from a method repository is adopted as verified fact.
+
+## Packaging specifications
 
 - [Agent Skills specification](https://agentskills.io/specification): portable folder and metadata structure.
 - [Skills CLI](https://github.com/vercel-labs/skills): optional installation; not bundled.
 - [Claude Code plugins](https://code.claude.com/docs/en/plugins/create): optional thin plugin manifest.
-- [Model Context Protocol](https://modelcontextprotocol.io/docs/learn/server-concepts): informs possible future executable adapters. No MCP server ships in v0.2.
+- [Model Context Protocol](https://modelcontextprotocol.io/docs/learn/server-concepts): informs possible future executable adapters. No MCP server ships in v0.3.
 
 ## Related production work
 

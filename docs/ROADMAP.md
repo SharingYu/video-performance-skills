@@ -16,6 +16,12 @@ Priorities are guided by reproducible creator problems. The sequence below is di
 - Additional genres and acting styles: restrained drama, stylized animation, product storytelling and human ensembles.
 - Better creator onboarding based on actual installation and task feedback.
 
+## v0.3 — three-route integration and long-text support
+
+`video-creation` now selects reference reconstruction, novel adaptation or original/reference-derived development. A local standard-library helper preserves sources, manageable text chunks, delivered-read progress and versioned artifacts. Shared briefs, serial ledgers and source-to-shot handoffs connect the work without requiring a whole new production stack.
+
+Next production evidence should include a small spoken/narrated episode batch with recurring characters. Source parsing, script examples and old no-dialogue clips do not settle voice identity, lip sync, serial continuity or platform delivery.
+
 ## v0.2 — local observation tools
 
 CPU media inspection, per-shot overview, timestamp-preserving windows, context-linked crops and observer-attested notes are now provided by `video-observation`. It uses the host's existing image perception and makes no model API calls. Broad body language and interactions are the default target.

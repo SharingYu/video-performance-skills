@@ -3,7 +3,7 @@ name: video-observation
 description: "Inspect local videos through shot overviews, ordered short windows, and context-linked crops. Use when reading a reference, checking who looks or moves toward what, following body language and partner reactions, or resolving an uncertain action before adaptation or review. Record visible evidence separately from interpretation."
 license: MIT
 metadata:
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Video Observation

@@ -106,6 +106,9 @@ def check(root: Path) -> list[str]:
         "skills/video-observation/SKILL.md", "skills/video-observation/LICENSE",
         "skills/video-observation/scripts/video_observe.py",
         "skills/video-observation/scripts/requirements.txt",
+        "skills/video-creation/SKILL.md", "skills/video-creation/LICENSE",
+        "skills/video-creation/scripts/project_tool.py", "docs/THREE-ROUTES.md",
+        "docs/CAPABILITIES.md", "examples/three-routes/novel-source.md",
         "evals/cases.json", "evals/oracle.json",
     )
     for relative in required:
