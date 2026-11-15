@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0 — 2026-11-15
+
+- Add optional local multilingual dialogue transcription using an explicit local faster-whisper model.
+- Import timed SRT/VTT or WhisperX candidates with a required source-clock offset; keep captions, anonymous voices and visual character attribution separate.
+- Export linked context images and audio snippets while preserving audio delays, source timestamp gaps and input hashes.
+- Connect consequential words, action triggers and listener responses to reference event cards and protected beats.
+- Keep raw candidates, corrected text and unverified listening status explicit; no voice cloning, model-job submission or automatic speaker identity is added.
+
 ## 0.3.0 — 2026-11-15
 
 - Integrate reference reconstruction, novel-to-episodic-drama and original/reference-derived stories in one self-contained `video-creation` entry.

@@ -16,6 +16,10 @@ Priorities are guided by reproducible creator problems. The sequence below is di
 - Additional genres and acting styles: restrained drama, stylized animation, product storytelling and human ensembles.
 - Better creator onboarding based on actual installation and task feedback.
 
+## v0.4 — dialogue with action and reaction
+
+An optional local speech tool now connects Chinese/English transcription candidates, caption/WhisperX imports and context windows to the existing source clock. Reference and performance handoffs preserve consequential wording, attention and listener responses. It does not synthesize speech or automatically identify a character, and the base visual workflow remains model-free. [Dialogue example](../examples/dialogue/README.md).
+
 ## v0.3 — three-route integration and long-text support
 
 `video-creation` now selects reference reconstruction, novel adaptation or original/reference-derived development. A local standard-library helper preserves sources, manageable text chunks, delivered-read progress and versioned artifacts. Shared briefs, serial ledgers and source-to-shot handoffs connect the work without requiring a whole new production stack.

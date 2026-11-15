@@ -7,6 +7,7 @@ This package combines creative guidance with small deterministic tools. Your exi
 | Route selection and basic development | `video-creation` and its three self-contained route references | Worked text cases and task evaluations; not a guaranteed audience response |
 | Source registration and long-text continuation | Standard-library project tool with immutable input copies, hashes, chunks and artifact records | Mechanical tests; no automatic entity resolution or story extraction |
 | Local video observation | CPU overview, time windows, crops and observer journal | Synthetic-media tests and three maintainer source-window trials; static-sequence reasoning leaves real-time rhythm/audio unverified |
+| Local dialogue observation | Optional CPU ASR, source-clock subtitle/WhisperX import, linked audio/image windows | Machine words and anonymous voice labels remain candidates; role attribution needs actual source evidence, and listening is not automatically established |
 | Performance and highlights | Event cards, attention handoff, protected details and review | Fictional text examples; no expression-transfer or generator-control engine |
 | Advanced novel analysis | Basic workflow is self-contained; optional specialist skills may augment it | Full-book semantic consistency and a complete long series have not been established by this package |
 | Image generation and stable character assets | Handoff methods only | Requires the host's image tools and real identity/style asset checks |

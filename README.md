@@ -8,9 +8,11 @@ One creation hub, two focused companion skills, and small local tools for AI vid
 
 ## Choose your route
 
+Reference reading can now include local Chinese/English speech candidates, timed captions and linked action/reaction windows. The optional speech extra uses a separately prepared multilingual model; voice labels, visible characters and actually verified words remain distinct. [Dialogue workflow and example](examples/dialogue/README.md).
+
 | You bring | The hub helps you do |
 | --- | --- |
-| A video link or file | Obtain real media through available host tools, observe the event, protect its highlights and rebuild the requested story |
+| A video link or file | Obtain real media, connect visible action with candidate dialogue and responses, protect its highlights and rebuild the requested story |
 | A novel | Read traceable chunks, develop characters and dramatic units, design episodes, then write scripts and production handoffs |
 | An idea or an inspiring video | Compare story mechanisms and develop an original or meaningfully adapted story |
 

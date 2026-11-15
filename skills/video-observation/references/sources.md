@@ -14,4 +14,16 @@ Technical references:
 - [PyAV frames](https://pyav.org/docs/stable/api/frame.html): presentation timestamp and time base distinguish actual presentation time from an assumed frame-rate grid.
 - [PySceneDetect detectors](https://www.scenedetect.com/docs/latest/api/detectors.html): candidate cut detection; it does not detect acting intentions, partner reactions, or jokes.
 
-The distributed skill has no model weights, gaze estimator, audio-understanding engine, or cloud integration. Runtime libraries retain their own licenses. A usable view can improve the evidence available to an assistant; it does not guarantee a correct interpretation or measured creative improvement.
+## Dialogue observation sources
+
+The dialogue adapter is original integration around separately installed libraries and local model files. Candidate skill packages were inspected for reusable workflow ideas; none is installed by this skill or copied in full.
+
+| Source | Pinned reference / terms | Adopted scope and limit |
+|---|---|---|
+| [faster-whisper](https://github.com/SYSTRAN/faster-whisper/tree/65882eee9f5cdbeeb2d877f1131d48cf241b327d), SYSTRAN | v1.2.1, `65882eee9f5cdbeeb2d877f1131d48cf241b327d`; MIT code | Primary optional local ASR, VAD and available word/segment timing. No native role identification; VAD and ASR can miss short replies or hallucinate on non-speech. Models and runtime dependencies retain their own terms. |
+| [WhisperX](https://github.com/m-bain/whisperX/tree/3ccc17b8de34f305300f8a3fd3c9f76ba820c0d0) | v3.8.6, `3ccc17b8de34f305300f8a3fd3c9f76ba820c0d0`; BSD-2-Clause code | Import its existing structured output. No WhisperX installer or diarization runtime is included. Its current pyannote Community-1 model is CC-BY-4.0 and gated by separate user conditions; neither model nor token is bundled. Alignment positions supplied words; it does not verify them. |
+| [video-analyzer](https://github.com/33Yjh/video-analyzer/tree/22e9f706edbf7caa7baef5386ae2b02d38f40322), 33Yjh | `22e9f706edbf7caa7baef5386ae2b02d38f40322`; MIT | Workflow comparison for speech plus image evidence and reusable results. Its PowerShell extraction, default mirror, installer and coarse-time assumptions are not imported. |
+| [faster-whisper-transcriber](https://github.com/macrobert-com/faster-whisper-transcriber/tree/4cf122046f9b92ee77de42b5f16223485d108625), macrobert-com | `4cf122046f9b92ee77de42b5f16223485d108625`; MIT | Comparison of local reusable transcription and stored output. Its English-only default and outputs beside source files are not adopted. |
+| [FunASR](https://github.com/modelscope/FunASR/tree/cdd82b5cbfd05015f8fb2b167d61f25142c3a9e8) | v1.4.26, `cdd82b5cbfd05015f8fb2b167d61f25142c3a9e8`; MIT code, checkpoint-specific model terms | Evaluated alternative, not installed or an implemented backend here. Timestamp and speaker support depend on the actual checkpoint and composed pipeline; do not transfer one model's features to every FunASR path. |
+
+The distributed skill has no model weights, gaze estimator, automatic visible-speaker identity system or cloud integration. The optional speech adapter invokes a separately installed ASR library and local model; image observation and transcript import remain model-free. Runtime libraries retain their own licenses. Usable evidence can improve the assistant's decisions; it does not guarantee correct interpretation or measured creative improvement.

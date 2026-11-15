@@ -43,6 +43,8 @@ npx skills add SharingYu/video-performance-skills --skill video-creation perform
 
 ## 怎么用
 
+复刻观察新增本地中英文对白候选、带时间字幕导入和关联动作/回应的回看窗口。语音扩展需要单独准备多语言模型；匿名声音编号、画面角色和实际核实的原话分别记录。[对白观察示例](examples/dialogue/README.md)。
+
 直接用中文向助手提出任务。视频需能被当前助手读取；也可以先提供具体观察记录。
 
 统一从 **video-creation** 开始：“复刻这个视频，角色换成……”“把这本小说改成红果向漫剧”“根据这个点子原创，或在参考基础上重新改编”。它会选对应路线，只调用当前需要的专业模块。[三路线示例](examples/three-routes/README.md)。

@@ -3,7 +3,7 @@ name: video-creation
 description: "Coordinate three AI-video workflows: recreate a linked reference, adapt a novel into a serialized comic drama, or develop an original story or a reference-derived adaptation. Use to choose the right route, preserve sources and continuity, and carry an idea into scripts, shots and an available production backend."
 license: MIT
 metadata:
-  version: "0.3.0"
+  version: "0.4.0"
 ---
 
 # Video Creation

@@ -1,7 +1,7 @@
 interface:
   display_name: "Video Observation"
-  short_description: "Read video actions, attention, and partner reactions"
-  default_prompt: "Use $video-observation to inspect this video's actions, approximate attention, and partner reactions, keeping visible evidence separate from interpretation."
+  short_description: "Read video actions, dialogue, and partner reactions"
+  default_prompt: "Use $video-observation to inspect this video's actions, dialogue and partner reactions, keeping visible, audio-derived and interpreted evidence distinct."
 
 policy:
   allow_implicit_invocation: true

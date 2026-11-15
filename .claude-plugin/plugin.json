@@ -1,10 +1,19 @@
 {
   "name": "video-performance-skills",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Coordinate reference recreation, novel-to-drama adaptation and original stories, with local observation, source tracking and performance direction.",
-  "author": { "name": "SharingYu", "url": "https://github.com/SharingYu" },
+  "author": {
+    "name": "SharingYu",
+    "url": "https://github.com/SharingYu"
+  },
   "homepage": "https://github.com/SharingYu/video-performance-skills",
   "repository": "https://github.com/SharingYu/video-performance-skills",
   "license": "MIT",
-  "keywords": ["video", "performance", "directing", "visual-comedy", "agent-skills"]
+  "keywords": [
+    "video",
+    "performance",
+    "directing",
+    "visual-comedy",
+    "agent-skills"
+  ]
 }

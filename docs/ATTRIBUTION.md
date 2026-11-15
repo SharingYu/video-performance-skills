@@ -33,12 +33,22 @@ Premise, character strategy and scene questions also reference [screenwriting-sk
 
 The three-chapter prose exercise is newly authored fictional teaching text. It is not a published novel, an actual production case or a licensed third-party IP. No platform rule or commercial-success claim from a method repository is adopted as verified fact.
 
+## Dialogue observation
+
+The source-clock dialogue wrapper, transcript/context records and dialogue/reaction instructions are original package work. Primary runtime reference: [SYSTRAN faster-whisper v1.2.1](https://github.com/SYSTRAN/faster-whisper/tree/65882eee9f5cdbeeb2d877f1131d48cf241b327d), commit `65882eee9f5cdbeeb2d877f1131d48cf241b327d` (MIT). It is an optional dependency installed separately, not vendored; models are obtained separately and retain their applicable terms.
+
+The import interface reads existing [WhisperX v3.8.6](https://github.com/m-bain/whisperX/tree/3ccc17b8de34f305300f8a3fd3c9f76ba820c0d0) output, commit `3ccc17b8de34f305300f8a3fd3c9f76ba820c0d0` (BSD-2-Clause code). It does not bundle WhisperX or pyannote. [pyannote Community-1](https://huggingface.co/pyannote/speaker-diarization-community-1) is CC-BY-4.0 with separate gated access conditions; those conditions are not inherited as a dependency of this package's transcript importer.
+
+Workflow comparisons include [33Yjh/video-analyzer at 22e9f706edbf7caa7baef5386ae2b02d38f40322](https://github.com/33Yjh/video-analyzer/tree/22e9f706edbf7caa7baef5386ae2b02d38f40322) and [macrobert-com/faster-whisper-transcriber at 4cf122046f9b92ee77de42b5f16223485d108625](https://github.com/macrobert-com/faster-whisper-transcriber/tree/4cf122046f9b92ee77de42b5f16223485d108625), both MIT. Their scripts, installers, default models and private assumptions are not redistributed. [FunASR v1.4.26](https://github.com/modelscope/FunASR/tree/cdd82b5cbfd05015f8fb2b167d61f25142c3a9e8) was evaluated as an alternative; its MIT software license does not give one license to all its model weights, and it is not an implemented backend here. See [the observation sources](../skills/video-observation/references/sources.md) for selection and adoption limits.
+
+The dialogue example is newly authored fictional text with proposed staging. It is not another creator's transcript or evidence of an ASR/listening run.
+
 ## Packaging specifications
 
 - [Agent Skills specification](https://agentskills.io/specification): portable folder and metadata structure.
 - [Skills CLI](https://github.com/vercel-labs/skills): optional installation; not bundled.
 - [Claude Code plugins](https://code.claude.com/docs/en/plugins/create): optional thin plugin manifest.
-- [Model Context Protocol](https://modelcontextprotocol.io/docs/learn/server-concepts): informs possible future executable adapters. No MCP server ships in v0.3.
+- [Model Context Protocol](https://modelcontextprotocol.io/docs/learn/server-concepts): informs possible future executable adapters. No MCP server ships in v0.4.
 
 ## Related production work
 
@@ -49,3 +59,5 @@ The three-chapter prose exercise is newly authored fictional teaching text. It i
 The examples and text cases distributed here are original fictional teaching materials. They are not transcripts of another creator's film, records of real pets or people, or video generation results. Illustrative outputs were authored for the package; they are not represented as independently measured model outputs.
 
 Media integration tests generate simple temporary fixtures in code. Private reference-video reading trials are not distributed as footage or as a public model-accuracy benchmark.
+
+The private v0.4 dialogue trial used the Sintel trailer: © Blender Foundation | durian.blender.org, [CC-BY-3.0 sharing terms](https://durian.blender.org/sharing/), obtained from a W3C public media mirror. The film, extracted frames, audio and private observation files are not part of this package.

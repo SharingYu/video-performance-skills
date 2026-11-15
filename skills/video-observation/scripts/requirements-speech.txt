@@ -1,0 +1,3 @@
+# Optional speech extra; install the adjacent requirements.txt separately.
+# Model weights are supplied as an explicit local directory, never downloaded here.
+faster-whisper==1.2.1

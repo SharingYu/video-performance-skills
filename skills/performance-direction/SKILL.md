@@ -3,7 +3,7 @@ name: performance-direction
 description: "Preserve the expressive actions, reactions, and timing that make a reference video work; design original visual gags or hooks; and carry those choices into shots, prompts, edits, and review. Use for performance adaptation, lost facial or body detail, weak visual highlights, and performance-focused production review."
 license: MIT
 metadata:
-  version: "0.3.0"
+  version: "0.4.0"
 ---
 
 # Performance Direction
@@ -28,6 +28,7 @@ Do not expand a local repair into a new story. Mark missing evidence as unknown;
 - **Separate evidence from interpretation.** Record body facing, head facing, visible eye direction, and the object being handled separately. A turned head or working hand does not prove where the eyes look. Keep inferred intention and invented direction distinct from observed behavior.
 - **Protect the path when the path carries the moment.** A glance, wind-up, interrupted action, imbalance, or recovery may matter more than the final pose. Endpoints constrain boundaries; the intermediate performance still needs design and output evidence.
 - **Manage attention.** Decide who the audience should watch, the cue that transfers attention, and the space to read the reaction. One character may become quieter so another can be noticed. More simultaneous movement is not automatically better.
+- **Keep consequential speech with its response.** A word, negation, interruption or reply may trigger the defining action. Preserve its source line and listener reaction when relevant. Separate ASR text, captions, actually heard delivery and visible speaker evidence; an anonymous voice label is not a character identity. Silent material needs no invented dialogue.
 - **Fit the performer and style.** Humans, realistic animals, stylized creatures, and other characters support different expression channels. Do not impose human facial muscle codes, repeated blinks, exaggerated mouths, or continuous motion on every subject. Deliberate stillness can be a performance choice.
 - **Keep timing purposeful.** Derive timing from the event, not fixed pause lengths, beat counts, joke density, or target runtime. Distinguish requested generation length from the selected edit. Remove redundant waiting while preserving anticipation, reaction, and aftermath.
 - **Review what was actually observed.** A complete card, prompt, decode, or contact sheet does not prove real-time rhythm or audible quality. Use pending findings where capabilities or evidence stop. Bind approval to the actual version and range reviewed.

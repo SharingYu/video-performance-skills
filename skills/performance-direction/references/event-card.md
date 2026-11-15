@@ -54,10 +54,19 @@ Current delivery boundary:
 
 Adapt the presentation if a table becomes cumbersome, but keep the six responsibilities. Omit irrelevant channels rather than filling them with invented actions. Unknown eye direction stays unknown even when head direction or a manipulation target is clear.
 
+## When speech carries the event
+
+Keep dialogue inside the existing six groups, rather than adding a compulsory seventh group to every event. Link consequential line IDs and source intervals to their trigger, attention handoff and response. Record the words' source type (ASR candidate, imported caption or actually checked audio), anonymous voice label if present, supported role attribution, and uncertainty separately. A machine speaker ID does not identify the visible performer; narration, off-screen speech, shared voice acting and overlap can prevent a simple mapping.
+
+Protect wording or meaning only as the event requires. A missing “don't,” changed name, interrupted reply or premature answer can reverse an action's meaning. Preserve those details and the response they make intelligible; do not automatically demand exact wording for every casual line. Do not silently polish the reference transcript. Keep a proposed adaptation line separate from the source line, and describe the functional relationship it preserves.
+
+A useful protected detail might say “after line L-02's warning, the reaching hand stops; the other performer notices the still-raised hand before continuing.” This is a contract example, not evidence of any source film. Listener responses may overlap the end of a line. Use actually supported timing or relative order, without inventing millisecond precision or treating text punctuation as prosody.
+
 ## Evidence precision
 
 - Record the actual source and version. Use file hashes or host asset IDs when available; never invent them.
 - If frames are known, use zero-based half-open ranges `[in_frame, out_frame)`. The last displayed frame is `out_frame - 1`. Preserve each source's own frame rate or timestamps; do not transfer reference frame numbers to generated footage with a different time base.
 - If timing is unknown, use relative order and mark timing as unknown. Original timing is a design proposal, not an observation.
 - A transcript, still, user description, or article is evidence of that material only. Do not present it as full-video observation. Still frames can support poses and visible facts without proving real-time rhythm.
+- ASR, VAD and forced alignment support candidate words or timing; none certifies audible delivery, correct speaker attribution or listening. Keep caption disagreements and unobserved audio explicit. An empty recognition result is not proof of silence.
 - Preserve meaningful overlaps and contrasts in speed. The phase list is not a compulsory sequence of cuts or a fixed emotional arc.

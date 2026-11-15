@@ -28,6 +28,8 @@ python scripts/video_observe.py crop --manifest observation/window/manifest.json
 
 ## Pass 1: make a shot and action map
 
+If dialogue may explain an action or carry the payoff, use [the dialogue workflow](dialogue-workflow.md) alongside this visual pass. Keep both on the source-video clock. A subtitle or ASR result helps locate a cue; it does not prove a visible character spoke, establish prosody, or replace inspecting the reaction.
+
 Open the actual overview sheets using the host's image tool. Note the broad actor and prop relationships, the initial task, what changes, and the result. Include quiet shots; a restrained character may respond by following an object, halting a reach, or letting another character move first.
 
 Some hosts drop image blocks when a response contains too many large images. Start with one or two sheets per response when needed, inspect truncation notices, and reopen any discarded image. Record only images actually delivered for inspection, not every attempted tool call.

@@ -1,16 +1,16 @@
 ---
 name: video-observation
-description: "Inspect local videos through shot overviews, ordered short windows, and context-linked crops. Use when reading a reference, checking who looks or moves toward what, following body language and partner reactions, or resolving an uncertain action before adaptation or review. Record visible evidence separately from interpretation."
+description: "Inspect reference-video actions, broad attention, spoken dialogue and partner reactions. Use shot views and context-linked crops, with optional local speech transcription or imported subtitles, to connect what is said to who acts or responds. Keep visible, audio-derived and interpreted evidence distinct."
 license: MIT
 metadata:
-  version: "0.3.0"
+  version: "0.4.0"
 ---
 
 # Video Observation
 
-Help the existing assistant see enough of a video to understand ordinary, audience-visible performance: who attends to whom or what, what they do, how the body responds, and how a partner answers. Do not turn a broad acting question into facial-muscle, skeleton, or precise gaze measurement.
+Help the existing assistant understand ordinary, audience-visible performance: who attends to whom or what, what they do or say, how the body responds, and how a partner answers. Do not turn a broad acting question into facial-muscle, skeleton, or precise gaze measurement.
 
-Respond in the user's language and preserve the requested scope. Read [the observation workflow](references/reading-workflow.md) for commands, evidence handling, and handoff. The bundled [CPU tool](scripts/video_observe.py) uses [these dependencies](scripts/requirements.txt); it includes no model or cloud API.
+Respond in the user's language and preserve the requested scope. Read [the image observation workflow](references/reading-workflow.md) for commands, evidence handling, and handoff. Its [CPU tool](scripts/video_observe.py) uses [these dependencies](scripts/requirements.txt), without model weights or a cloud API. When speech may carry story meaning or a reaction cue, also read [the dialogue workflow](references/dialogue-workflow.md): optional local ASR or imported transcripts support the same source timeline, but do not certify listening or identify a visible character.
 
 ## Observe before explaining
 
@@ -19,6 +19,8 @@ Respond in the user's language and preserve the requested scope. Read [the obser
 3. **Keep the relationship visible.** Check the full composition alongside a useful crop. A face alone can hide its attention target; an isolated hand can hide the partner's cue.
 4. **Write visible facts first.** Describe approximate direction, approach or withdrawal, action changes, partner response, and result. Separate body/head direction, readable eye direction, and the object being handled. Use qualified language for an apparent attention target; an unreadable eye direction can stay unknown without blocking the rest of the scene.
 5. **Check the important uncertainty.** An independent observer can inspect the same material before receiving the first interpretation. Use disagreement to choose a useful return view. Agreement between assistants is not ground truth. Stop repeating views when the source cannot resolve the question; retain the uncertainty and continue useful work.
+
+For a reference recreation, establish whether dialogue is present and what coverage was actually obtained. Connect consequential lines to the speaker, action and listener response using the dialogue workflow. An audio track, silent ASR result or subtitle file alone cannot establish that the scene has no speech.
 
 ## Make the observation real
 
@@ -32,6 +34,6 @@ Static sequences support poses and visible order. They do not establish real-tim
 
 Hand verified broad actions and unresolved details to the user's adaptation, shot-planning, or review workflow. If `performance-direction` is already available, its event card can consume these observations; this skill does not require it or any particular production backend.
 
-The bundled tool makes no network call or model API request. Additional cloud review is optional and external: use it only within the task's authorization and, when no extra API cost is required, after confirming the actual project/model is on a free tier. A free website or an unverified key is not proof of a free API. Unavailable service or quota leaves the local workflow usable.
+The bundled tools make no model API request; image observation and transcript import need no speech model. Optional transcription requires separately prepared local model files and the speech extra. It does not silently substitute a cloud service. Additional cloud review is external: use it only within the task's authorization and, when no extra API cost is required, after confirming the actual project/model is on a free tier. A free website or an unverified key is not proof of a free API. Unavailable service or quota leaves the local image/import workflow usable.
 
 Source acknowledgments and limits: [sources](references/sources.md).

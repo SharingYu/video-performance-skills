@@ -17,6 +17,8 @@ For example, a fictional detail `PE-01-A` may require a hand to stop after a cue
 
 Every protected detail needs a readable carrier. Do not freeze the payoff into the opening frame or presume that a correct ending proves the middle. If the path is the point, plan intermediate performance or suitable motion references and verify the result. Do not automatically turn every phase into an editorial cut.
 
+When speech carries a protected event, trace the source line and its attribution evidence to the adapted line, responsible shot, actual output audio interval and listener reaction. Keep observed words, adaptation choices and model output distinct. A prompt that requests a line does not prove it was spoken correctly; a subtitle over a different spoken line does not repair the audio. Preserve information order, meaningful interruptions and the listener's recognition when selecting picture and sound. If speech generation or listening is unavailable, leave those requirements pending rather than dropping the line or passing delivery from ASR alone.
+
 ## Use available production tools honestly
 
 State each reference's role: identity, performance, space, prop, style, or sound. Check what the chosen tool actually accepts and reads, including effective time window, resolution, and duration rules. Small expressions can disappear in low-resolution proxies. A video reference may preserve motion while changing identity; neither success implies the other.
@@ -38,6 +40,8 @@ Use `pass`, `fail`, `pending`, or `not_applicable`, with evidence and a reason f
 | **Continuity** | Identity, props, knowledge, physical state, and necessary spatial relationships carry coherently | Unmotivated gaze/prop changes or an unexplained reset after a consequence |
 | **Highlight** | Protected expression, response, information order, and payoff are actually perceptible | Plot action completes but the defining reaction is missing, hidden, too small, or revealed early |
 | **Rhythm** | Real-time anticipation, peak, response, and release work without padding | A needed pause is removed, or repetitive slow activity fills unused duration |
+
+For speech-bearing events, the same gates cover the correct track and source clock (technical), the response to a line (action), speaker/listener and knowledge continuity (continuity), required words or meaning and reveal (highlight), and audible cue-to-response timing (rhythm). They are not five separate speech models. Machine transcripts can flag a suspected mismatch, but actual listening is required to pass delivery or naturalness; source ASR success alone cannot approve generated audio.
 
 Record the observer, method, actual version/range, evidence, and limits. Decoding establishes media integrity; stills and dense samples can support pose and sequence findings. They do not by themselves establish real-time rhythm or subjective audio quality. If the host cannot perform the needed observation, mark that part pending and complete the work it can perform. User feedback can add scoped evidence, but is not a mandatory per-shot approval gate.
 

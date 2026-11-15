@@ -22,6 +22,16 @@ Use normal audience-visible granularity unless the user asks for closer analysis
 
 Distinguish an action shown from an outcome revealed after an omission or cut. Do not add an unseen transaction, off-screen punishment, spoken line or motivation merely because it explains the plot.
 
+## Read speech with its consequences
+
+Establish whether dialogue, narration or a short vocal reply may carry the action or payoff. An audio stream, a caption file or an empty ASR result does not settle that question. If `video-observation` is available, its dialogue branch can transcribe with a separately prepared local speech model or import SRT/VTT/WhisperX results; otherwise use the host's actual transcription and listening capabilities. Keep the source version, chosen audio track and offset on the same video clock as the frames.
+
+Preserve original wording before proposing corrections. Short negations, repetitions and unfinished replies can explain a reaction; do not polish them out or replace them with a plot-consistent guess. Record ASR candidates and subtitles separately, with disagreements and evidence. A forced-aligned transcript is still a supplied text positioned against audio, not proof that the words are correct.
+
+For a consequential line, inspect contextual pictures and, when the host supports it, listen to the matching audio. Record the line, source interval, supported speaker or unknown attribution, the action it prompts, and the listener's broad attention/body response. Voice clusters are anonymous and may not map one-to-one to roles. Keep narration, off-screen speech and overlap explicit; do not assign the current shot's subject as speaker by default. Mark actual listening separately from ASR-derived words and visible action. A silent ASR result around a suspected short reply warrants one bounded no-VAD comparison, not an invented line or unlimited retries.
+
+Link line IDs and reaction windows to protected events when a phrase, interruption or reply is essential. Preserve what the audience hears before it sees the response, or vice versa. Known words without the defining response are not a complete recreation; readable action without the line that causes it can also change the story. Unheard delivery and real-time rhythm remain pending even when the text reads well.
+
 ## Protect the appeal before replacing the shell
 
 Identify the few moments that change the viewer's expectation or reward it. Preserve the trigger, action turn, reaction, information order and aftermath that carry the effect. Appearance matching and a completed physical task are not sufficient tests.
@@ -45,4 +55,4 @@ Write the reconstruction as concrete action and reciprocal consequences, then gi
 
 Continue through [shared handoff](shared-handoff.md) to assets, keyframes, the supported backend, selection and review when requested and authorized. Separate requested generation duration from the useful edit. If a protected reaction is absent or unreadable, repair its staging, source input, performance or selection rather than changing the shot's duty after failure.
 
-Deliver the source/coverage record, causal reconstruction, protected events, permitted changes and the requested downstream artifacts. Keep unobserved rhythm, audio and obscured action explicitly pending.
+Deliver the source/coverage record, causal reconstruction, consequential dialogue with attribution limits, protected events, permitted changes and the requested downstream artifacts. A genuinely no-dialogue source needs no invented transcript. Keep unobserved rhythm, audio and obscured action explicitly pending.
